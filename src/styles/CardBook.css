@@ -1,11 +1,14 @@
-
-
 .cardBookDiv {
-    text-align: center;
-    border: 1px solid #60C0DC;
-    border-radius: 2%;
     padding: 1%;
     margin: 4%;
+    border: 1px solid #d6d6d6;
+    border-radius: 2%;
+    text-align: center;
+    box-shadow: 20px 20px 50px;
+}
+
+.cardBookDiv:hover {
+    border: 1px solid #9e9e9e;
 }
 
 ul {
@@ -15,15 +18,18 @@ ul {
 .listBooks > li {
     list-style: none;    
     margin: 0;
+    font-family: MontSerrat;
 }
 
 
 .titleBook {
-    font-size: 1.8em;
+    font-size: 1.7em;
+    font-weight: bold;
 }
 
 .authorBook {
     font-size: 1.3em;
+    font-weight: bold;
 }
 
 .dateBook {
@@ -37,4 +43,5 @@ ul {
 .updateButton, .deleteButton {
     padding-bottom: 4%;
     width: 100%;
+    font-family: Spectral SC;
 }

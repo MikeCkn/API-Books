@@ -15,7 +15,7 @@ class FormAddBook extends Component {
                         <FormControl type="text" name="release_date" placeholder="2007"></FormControl><br/>
                         <ControlLabel>Number of pages</ControlLabel>
                         <FormControl type="text" name="pages" placeholder="450"></FormControl><br/>
-                        <Button className="formDeleteButton" bsStyle="info" type="submit">ADD</Button>
+                        <Button className="formAddButton" bsStyle="info" type="submit">ADD</Button>
                     </form>
                 </div>
             );

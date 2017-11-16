@@ -1,9 +1,10 @@
 .formDiv {
     padding-left: 40%;
     padding-right: 40%;
-    padding-bottom: 5%;
+    padding-bottom: 3%;
+    font-family: Spectral SC;
 }
 
-.formDeleteButton {
+.formAddButton {
     width: 100%;
 }
