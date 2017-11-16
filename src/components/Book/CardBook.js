@@ -29,7 +29,7 @@ render() {
     return  <div className="cardBookDiv animated slideInLeft col-md-2" key={item._id}>
                 <ul className="listBooks">
                     <li className="titleBook">{item.title}</li>
-                    <li className="dateBook">( {item.release_date} )</li>
+                    <li className="dateBook">{item.release_date}</li>
                     <li className="authorBook">{item.author}</li>
                     <li className="pagesBook">{item.pages} pages</li>
                 </ul>
