@@ -19,7 +19,7 @@ ul {
 
 
 .titleBook {
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .authorBook {
@@ -29,3 +29,12 @@ ul {
 .dateBook {
     font-size: 1.1em;
 }    
+
+.formButton {
+    padding-bottom: 2%;
+}
+
+.updateButton, .deleteButton {
+    padding-bottom: 4%;
+    width: 100%;
+}
