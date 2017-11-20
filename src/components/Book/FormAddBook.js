@@ -2,10 +2,11 @@ import React, {Component} from 'react';
 import {Button, FormControl, ControlLabel} from 'react-bootstrap';
 
 class FormAddBook extends Component {
+    
     render() {
         return (
                 <div className="formDiv animated slideInDown">
-                    <form method="POST" action="http://localhost:3015/add">
+                    <form method="POST" action={this.props.action}>
                         <ControlLabel>Title</ControlLabel>
                         <FormControl type="text" name="title" placeholder="Harry Potter"></FormControl><br/>
                         <ControlLabel>Author</ControlLabel>
