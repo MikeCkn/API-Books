@@ -4,11 +4,15 @@
     border: 2px solid #a9b9b7;
     border-radius: 2%;
     text-align: center;
-    box-shadow: 20px 20px 50px;
+    box-shadow: 0px 0px 20px ;
 }
 
 .cardBookDiv:hover {
+    transition: 0.4s;
     border: 2px solid #60C0DC;
+    box-shadow: 0px 0px 40px #60C0DC;
+    color: #60C0DC;
+    font-size: 1.2em;
 }
 
 ul {
@@ -27,7 +31,7 @@ ul {
 }
 
 .titleBook {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
 }
 

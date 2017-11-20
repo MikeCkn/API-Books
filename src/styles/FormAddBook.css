@@ -6,3 +6,7 @@
 .formAddButton {
     width: 100%;
 }
+
+FormControl::placeholder {
+    color: red;
+}
