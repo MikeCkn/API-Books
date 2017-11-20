@@ -20,7 +20,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "dev": "nodemon --exec npm run babel-node",
-    "babel-node": "babel-node --presets es2015 server/server.js"
+    "babel-node": "babel-node --presets es2015 server/server.js",
+    "project": "npm run start & npm run dev"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

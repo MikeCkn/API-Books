@@ -10,11 +10,11 @@ const newBook = new mongoose.Schema({
         required: true
     },
     'release_date': {
-        type: Number,
+        type: String,
         required: true
     },
     'pages': {
-        type: Number,
+        type: String,
         required: true
     }
 }, {

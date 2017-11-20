@@ -33,7 +33,7 @@ render() {
                     <li className="authorBook">{item.author}</li>
                     <li className="pagesBook">{item.pages} pages</li>
                 </ul>
-                <form className="formButton" action={`http://localhost:3015/${item._id}`} method="POST">
+                <form className="formButton" action={`http://localhost:3015/update/${item._id}`} method="POST">
                     <Button className="updateButton" type="submit" bsStyle="warning">Update</Button>
                 </form>
                 <form action={`http://localhost:3015/delete/${item._id}`} method="POST">
