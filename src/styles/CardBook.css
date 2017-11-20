@@ -21,6 +21,10 @@ ul {
     font-family: MontSerrat;
 }
 
+.dateBook {
+    font-size: 1.2em;
+    padding-bottom: 5%;
+}
 
 .titleBook {
     font-size: 1.5em;
@@ -29,6 +33,7 @@ ul {
 
 .authorBook {
     font-size: 1.2em;
+    padding-bottom: 5%;
 }  
 
 .dateBook, .pagesBook {
@@ -37,4 +42,5 @@ ul {
 
 .updateButton, .deleteButton {    
     font-family: Spectral SC;
+    width: 100%;
 }
