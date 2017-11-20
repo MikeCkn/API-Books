@@ -1,7 +1,7 @@
 .cardBookDiv {
     padding: 1%;
     margin: 4%;
-    border: 2px solid #d6d6d6;
+    border: 2px solid #a9b9b7;
     border-radius: 2%;
     text-align: center;
     box-shadow: 20px 20px 50px;
@@ -29,15 +29,12 @@ ul {
 
 .authorBook {
     font-size: 1.2em;
-    font-weight: bold;
 }  
 
-.formButton {
-    padding-bottom: 2%;
+.dateBook, .pagesBook {
+    color: #a9b9b7;
 }
 
-.updateButton, .deleteButton {
-    padding-bottom: 4%;
-    width: 100%;
+.updateButton, .deleteButton {    
     font-family: Spectral SC;
 }

@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {bootstrap, Button, FormControl, ControlLabel} from 'react-bootstrap';
-import Animate from 'animate.css';
+import {Button, FormControl, ControlLabel} from 'react-bootstrap';
 
 class FormAddBook extends Component {
     render() {

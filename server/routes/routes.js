@@ -28,7 +28,7 @@ router.post('/add', express.urlencoded({extended: true}), (req, res) => {
     });
 });
 
-//MODIFY A BOOK BY ID
+//UPDATE A BOOK BY ID
 router.post('/update/:id', express.urlencoded({extended: true}), (req, res) => {
     Book.findByIdAndUpdate(req.params.id, req.body, (err, books) => {
         err ? res.send(err) : res.redirect('http://localhost:3000')
@@ -36,7 +36,7 @@ router.post('/update/:id', express.urlencoded({extended: true}), (req, res) => {
 });
 
 //DELETE A BOOK BY ID
-router.post('/delete/:id', express.urlencoded({extended: true}), (req, res) => {
+router.get('/delete/:id', (req, res) => {
     Book.findByIdAndRemove(req.params.id, (err, book) => {
         err ? res.send(err) : res.redirect('http://localhost:3000')
     })

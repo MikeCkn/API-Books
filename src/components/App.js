@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../assets/logo.svg';
-import Animate from 'animate.css';
+import 'animate.css';
 
 import {CardBook, FormAddBook} from './Book';
 
