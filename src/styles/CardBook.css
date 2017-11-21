@@ -12,7 +12,6 @@
     border: 2px solid #60C0DC;
     box-shadow: 0px 0px 40px #60C0DC;
     color: #60C0DC;
-    font-size: 1.2em;
 }
 
 ul {
@@ -40,11 +39,36 @@ ul {
     padding-bottom: 5%;
 }  
 
+.pagesBook {
+    padding-bottom: 5%;
+}
+
 .dateBook, .pagesBook {
     color: #a9b9b7;
 }
 
-.updateButton, .deleteButton {    
-    font-family: Spectral SC;
+.buttonsCardBook {
+    border-top: 1px solid #a9b9b7;
+    padding-top: 6%;
+}
+
+.saveButton {
     width: 100%;
+}
+
+.updateButton, .deleteButton, .saveButton {    
+    font-family: Spectral SC;
+    transition: 0.2s;
+}
+
+.updateButton:hover {
+    background-color: #FFF!important;
+    color: #EFB66F!important;
+    border: 1px solid #EFB66F!important;
+}
+
+.deleteButton:hover {
+    background-color: #FFF!important;
+    color: #D6504F!important;
+    border: 1px solid #D6504F!important;
 }

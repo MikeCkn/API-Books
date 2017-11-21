@@ -18,17 +18,16 @@ class CardBook extends Component {
 
     render() {
         return (
-<div className="cardBookDiv animated slideInUp col-md-2">
+                <div className="cardBookDiv animated slideInUp col-md-2">
                     <ul className="listBooks">
                         <li className="dateBook">{this.props.data.release_date}</li>
                         <li className="titleBook">{this.props.data.title}</li>
                         <li className="authorBook">{this.props.data.author}</li>
                         <li className="pagesBook">{this.props.data.pages} pages</li>
                     </ul>
-                    <hr/>
-                    <div className="row">
+                    <div className="buttonsCardBook row">
                         <a className="updateLink col-md-6" >
-                            <Button className="updateButton" bsStyle="warning" onClick={this.openModal}>Update</Button>
+                            <Button className="updateButton" onClick={this.openModal}>Update</Button>
                         </a>   
                             <Modal className="animated slideInDown" show={this.state.showModal} onHide={this.closeModal}>
                                 <Modal.Header closeButton>
@@ -44,12 +43,12 @@ class CardBook extends Component {
                                         <FormControl type="text" name="release_date" defaultValue={this.props.data.release_date}></FormControl><br/>
                                         <ControlLabel>Number of pages</ControlLabel>
                                         <FormControl type="text" name="pages" defaultValue={this.props.data.pages}></FormControl><br/>
-                                        <Button className="updateButton" bsStyle="warning" type="submit">SAVE</Button>
+                                        <Button className="saveButton" bsStyle="warning" type="submit">SAVE</Button>
                                     </form>
                                 </Modal.Body>
                             </Modal>
                         <a className="deleteLink col-md-6" href={`http://localhost:3015/delete/${this.props.data._id}`}>
-                            <Button className="deleteButton" type="submit" bsStyle="danger">Delete</Button>
+                            <Button className="deleteButton" type="submit">Delete</Button>
                         </a>
                     </div>
                 </div>

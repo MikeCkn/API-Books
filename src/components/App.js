@@ -29,9 +29,9 @@ class App extends Component {
           <div className="container-fluid">
             <FormAddBook action="http://localhost:3015/add"/>
                 <div className="alignBooksDiv row">{this.state.books.map((item, index) => {
-        return  <CardBook data={item} key={index}/>
-            })}
-    </div>
+                    return  <CardBook data={item} key={index}/>
+                })}
+                </div>
           </div>
         );
     }
