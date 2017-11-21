@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {CardBook, FormAddBook} from './Book';
+import {FormAddBook, CardBook} from './Book';
 import 'animate.css';
 
 
@@ -28,7 +28,10 @@ class App extends Component {
         return (
           <div className="container-fluid">
             <FormAddBook action="http://localhost:3015/add"/>
-            <CardBook books={this.state.books}/>
+                <div className="alignBooksDiv row">{this.state.books.map((item, index) => {
+        return  <CardBook data={item} key={index}/>
+            })}
+    </div>
           </div>
         );
     }

@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {Button, Modal, FormControl, ControlLabel} from 'react-bootstrap';
 
 class CardBook extends Component {
@@ -16,16 +16,14 @@ class CardBook extends Component {
       this.setState({showModal: false})
     }
 
-render() {
-    return (
-
-    <div className="alignBooksDiv row">{this.props.books.map(item => {
-        return  <div className="cardBookDiv animated slideInUp col-md-2" key={item._id}>
+    render() {
+        return (
+<div className="cardBookDiv animated slideInUp col-md-2">
                     <ul className="listBooks">
-                        <li className="dateBook">{item.release_date}</li>
-                        <li className="titleBook">{item.title}</li>
-                        <li className="authorBook">{item.author}</li>
-                        <li className="pagesBook">{item.pages} pages</li>
+                        <li className="dateBook">{this.props.data.release_date}</li>
+                        <li className="titleBook">{this.props.data.title}</li>
+                        <li className="authorBook">{this.props.data.author}</li>
+                        <li className="pagesBook">{this.props.data.pages} pages</li>
                     </ul>
                     <hr/>
                     <div className="row">
@@ -37,27 +35,26 @@ render() {
                                     <Modal.Title>Updating Book</Modal.Title>
                                 </Modal.Header>
                                 <Modal.Body>
-                                    <form method="POST" action={`http://localhost:3015/update/${item._id}`}>
+                                    <form method="POST" action={`http://localhost:3015/update/${this.props.data._id}`}>
                                         <ControlLabel>Title</ControlLabel>
-                                        <FormControl type="text" name="title" placeholder={item.title}></FormControl><br/>
+                                        <FormControl type="text" name="title" defaultValue={this.props.data.title}></FormControl><br/>
                                         <ControlLabel>Author</ControlLabel>
-                                        <FormControl type="text" name="author" placeholder={item.author}></FormControl><br/>
+                                        <FormControl type="text" name="author" defaultValue={this.props.data.author}></FormControl><br/>
                                         <ControlLabel>Date of release</ControlLabel>
-                                        <FormControl type="text" name="release_date" placeholder={item.release_date}></FormControl><br/>
+                                        <FormControl type="text" name="release_date" defaultValue={this.props.data.release_date}></FormControl><br/>
                                         <ControlLabel>Number of pages</ControlLabel>
-                                        <FormControl type="text" name="pages" placeholder={item.pages}></FormControl><br/>
+                                        <FormControl type="text" name="pages" defaultValue={this.props.data.pages}></FormControl><br/>
                                         <Button className="updateButton" bsStyle="warning" type="submit">SAVE</Button>
                                     </form>
                                 </Modal.Body>
                             </Modal>
-                        <a className="deleteLink col-md-6" href={`http://localhost:3015/delete/${item._id}`}>
+                        <a className="deleteLink col-md-6" href={`http://localhost:3015/delete/${this.props.data._id}`}>
                             <Button className="deleteButton" type="submit" bsStyle="danger">Delete</Button>
                         </a>
                     </div>
                 </div>
-            })}
-    </div>
-)}
+        );
+    }
 }
 
 export default CardBook
