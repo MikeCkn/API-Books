@@ -24,6 +24,7 @@ class CardBook extends Component {
                         <li className="titleBook">{this.props.data.title}</li>
                         <li className="authorBook">{this.props.data.author}</li>
                         <li className="pagesBook">{this.props.data.pages} pages</li>
+                        <li><img className="imageBook" src={this.props.data.image}/></li>
                     </ul>
                     <div className="buttonsCardBook row">
                         <a className="updateLink col-md-6" >

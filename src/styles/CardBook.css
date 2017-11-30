@@ -47,6 +47,11 @@ ul {
     color: #a9b9b7;
 }
 
+.imageBook {
+    height: 100px;
+    width: 100px;
+}
+
 .buttonsCardBook {
     border-top: 1px solid #a9b9b7;
     padding-top: 6%;

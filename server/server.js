@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
+import path from 'path';
 
 import config from './config/config';
 import router from './routes/routes';
@@ -12,6 +13,8 @@ mongoose.connect(config.mongoUrl, () => {
 
 const app = express();
 
+//MULTER
+app.use(express.static(path.join(__dirname, 'public')));
 //CALL routes
 app.use(cors())
 app.use(router);

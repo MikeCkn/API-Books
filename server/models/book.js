@@ -16,6 +16,9 @@ const newBook = new mongoose.Schema({
     'pages': {
         type: String,
         required: true
+    },
+    'image': {
+        type: String
     }
 }, {
     versionKey: false
